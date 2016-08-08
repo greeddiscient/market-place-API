@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-MarketPlaceApi::Application.config.secret_key_base = '895f91172104af82e70cfcd85fd1a042631e51f91921ed6e7d48c18924a8f9d0a7351141a37da300387eda7e3946e4e721528ba1e061445fe18e584c17700dcb'
+MarketPlaceApi::Application.config.secret_key_base = '502f250e5e7e8581b8dd715e0fec8e0691ac4b56039ecb4906a0a83c614e6e8bedb4b08d984bade8028a469d2f3278437d72320f282141e10fa1ddafdddaf3fe'
