@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.2'
+gem 'rails', '4.2'
 
 # Use sqlite3 as the database for Active Record
 group :development do
@@ -9,7 +9,7 @@ group :development do
 end
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails', '~> 4.0.2'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -43,6 +43,12 @@ end
 
 gem 'active_model_serializers'
 gem "devise"
+
+gem 'sabisu_rails',github: "IcaliaLabs/sabisu-rails"
+gem 'compass-rails', '~> 2.0.0'
+gem 'furatto', '~> 1.3.7'
+gem 'font-awesome-rails', '~> 4.3.0.0'
+gem 'simple_form', '~> 3.1.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
