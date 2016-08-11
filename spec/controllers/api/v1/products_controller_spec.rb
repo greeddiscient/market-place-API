@@ -6,10 +6,10 @@ describe Api::V1::ProductsController do
       get :show, id: @product.id
     end
 
-    it "returns the information about a reporter on a hash" do
-      product_response = json_response
-      expect(product_response[:title]).to eql @product.title
-    end
+  it "returns the information about a reporter on a hash" do
+    product_response = json_response[:product]
+    expect(product_response[:title]).to eql @product.title
+  end
 
     it { should respond_with 200 }
   end
@@ -36,11 +36,10 @@ describe Api::V1::ProductsController do
         post :create, { user_id: user.id, product: @product_attributes }
       end
 
-      it "renders the json representation for the product record just created" do
-        product_response = json_response
-        expect(product_response[:title]).to eql @product_attributes[:title]
-      end
-
+  it "renders the json representation for the product record just created" do
+    product_response = json_response[:product]
+    expect(product_response[:title]).to eql @product_attributes[:title]
+  end
       it { should respond_with 201 }
     end
 
@@ -78,10 +77,10 @@ describe Api::V1::ProductsController do
               product: { title: "An expensive TV" } }
       end
 
-      it "renders the json representation for the updated user" do
-        product_response = json_response
-        expect(product_response[:title]).to eql "An expensive TV"
-      end
+  it "renders the json representation for the updated user" do
+    product_response = json_response[:product]
+    expect(product_response[:title]).to eql "An expensive TV"
+  end
 
       it { should respond_with 200 }
     end
